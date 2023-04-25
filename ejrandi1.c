@@ -7,7 +7,7 @@
 	int a, b, i;
 	int suma;
 	do{
-		printf("establezca el limite superior\n");
+		printf("establezca el lin superior\n");
 		scanf("%i", &b);
 		printf("establezca el limite inferior\n");
 		scanf("%i", &a);
