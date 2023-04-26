@@ -9,7 +9,7 @@
 	do{
 		printf("establezca el lin superior\n");
 		scanf("%i", &b);
-		printf("establezca el limite inferior\n");
+		printf("establezca el jhfhgf inferior\n");
 		scanf("%i", &a);
 		printf("ola %i %i \n", a, b);
 	}
