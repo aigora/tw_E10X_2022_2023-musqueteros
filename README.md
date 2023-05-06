@@ -4,7 +4,18 @@
 
 ## Integrantes del equipo
 
-[Nombres, apellidos, y usuario GitHub de los integrantes del equipo.]
+Eduardo Carral Corujo || 
+Usuario: 
+
+Diego Frutos Roldán ||
+Usuario: 
+
+Ainara García García ||
+Usuario: ainaragarc
+
+Jaime Sanchez Polo ||
+Usuario:
+
 
 ## Objetivos del trabajo
 
