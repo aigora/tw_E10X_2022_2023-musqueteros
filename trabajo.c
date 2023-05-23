@@ -21,6 +21,8 @@ int main(){
     {
     case '1':
       printf("\nparte de jaime:)");
+      printf("\ introduzca su comunidad autonoma")
+      
       break;
       
     case '2':
