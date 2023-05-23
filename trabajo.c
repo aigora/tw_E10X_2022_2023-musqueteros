@@ -8,15 +8,15 @@ int main(){
 	
 	vueltaalmenu1=0;//en caso de volver necesitar volver al menu, se cambiara la variable por 1 y volvera al bucle
 	
-	printf("(introduccion del trabajo, explicaciones y contraseñas)\n\n");
+	printf("(introduccion del trabajo, explicaciones y contraseÃ±as)\n\n");
 	printf("si quiere pasar a (parte de Jaime), pulse 1\n");
 	printf("si quiere pasar a (parte de Aianra), pulse 2\n");
 	printf("si quiere pasar a (parte de Diego), pulse 3\n");
 	printf("si quiere pasar a (parte de edu), pulse 4\n");
 	printf("si quiere cerrar el programa, pulse 5\n");
 	
-  int menu1;
-  scanf("%d", &menu1);
+  char menu1;
+  scanf("%c", &menu1);
   switch(menu1)
     {
     case '1':
