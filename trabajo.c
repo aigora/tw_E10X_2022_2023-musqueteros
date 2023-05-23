@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+int verificarcontrasena(const char *contrasena);
+
 int main(){
 	
 	printf("(introduccion del trabajo, explicaciones y contraseñas)\n\n");
@@ -61,7 +63,7 @@ int main(){
 	return 0;
 }
 
-int verificarcontrasena(const char contrasena[8]) //intento funcion contraseña
+int verificarcontrasena(const char *contrasena) //intento funcion contraseña
 {
 	int i=0, j=0;
 	char respuesta[10];
