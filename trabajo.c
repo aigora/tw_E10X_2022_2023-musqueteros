@@ -3,7 +3,7 @@
 #include <string.h>
 
 int verificarcontrasena(const char *contrasena);
-
+//comprobacion
 int main(){
 	
 	printf("(introduccion del trabajo, explicaciones y contraseñas)\n\n");
