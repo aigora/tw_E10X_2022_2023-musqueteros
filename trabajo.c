@@ -1,18 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 void desglosa(int gasto,char comunidad);
+int verificarcontrasena(const char *contrasena);
 
 
 int main(){
 	int gasto;
-    char comunidad;
+    	char comunidad;
 	int vueltaalmenu1;
+	int comprobacioncontrasena;
+    	const char *contrasenadosejemploparaparte2 = "acelgas"; //para de momento nos vale
+	printf("(introduccion del trabajo, explicaciones y contraseñas)\n\n");
 	do {//bucle para volver al menu principal
 	
 	vueltaalmenu1=0;//en caso de volver necesitar volver al menu, se cambiara la variable por 1 y volvera al bucle
 	
-	printf("(introduccion del trabajo, explicaciones y contraseñas)\n\n");
+	
 	printf("si quiere pasar a (parte de Jaime), pulse 1\n");
 	printf("si quiere pasar a (parte de Aianra), pulse 2\n");
 	printf("si quiere pasar a (parte de Diego), pulse 3\n");
@@ -56,7 +61,17 @@ desglosa(gasto,comunidad);
 break;
       
     case '2':
-      printf("parte ainara\n");
+      comprobacioncontrasena = verificarcontrasena(contrasenadosejemploparaparte2);
+      if (comprobacioncontrasena==1) {
+        printf("\nPorfavor escoja el tipo de energia.\n");
+        
+        
+    	} 
+	  else {
+        printf("Contraseña incorrecta. Acceso denegado.\n");
+        vueltaalmenu1=1;
+        break;
+    	}
       break;
       
     case '3':
@@ -163,6 +178,22 @@ void desglosa(int gasto,char comunidad)
     }
 if (pfl == NULL)
  printf("error al abrir");
-    
+   	
+}
+
+int verificarcontrasena(const char *contrasena) //intento funcion contraseña
+{
+	int i=0, j=0;
+	char respuesta[10];
+    for (i=0; i<=2; i++){
+    	printf("porfavor introduzca la contraseña\nte quedan %i  intentos\n", 3-i);
+    	scanf("%s", respuesta);
+    if (strcmp(contrasena, respuesta) == 0) {
+    	j=1;
+        break; // las contraseñas son iguales asique es valida
+    	}
+	}
+	return j;
 	
 }
+
