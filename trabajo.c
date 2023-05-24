@@ -2,7 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 
-void desglosa(int gasto,char comunidad);
+typedef struct
+{
+	char nombre[20];
+	float vector[24];
+}energia;
+void analiza(int w);
 int verificarcontrasena(const char *contrasena);
 void ranquin_absolutos(int mes);
 float datos_tabla(const char* filausuario, int numuero_columna);
@@ -15,7 +20,7 @@ typedef struct {
 
 
 int main(){
-	int gasto;
+	
     	char comunidad;
 	int vueltaalmenu1;
 	int comprobacioncontrasena;
@@ -26,7 +31,7 @@ int main(){
 	vueltaalmenu1=0;//en caso de volver necesitar volver al menu, se cambiara la variable por 1 y volvera al bucle
 	
 	
-	printf("si quiere pasar a (parte de Jaime), pulse 1\n");
+	printf("si quiere pasar a Analisis detallado de 1 Energia(jaime)), pulse 1\n");
 	printf("si quiere pasar a (parte de Aianra), pulse 2\n");
 	printf("si quiere pasar a (parte de Diego), pulse 3\n");
 	printf("si quiere pasar a (parte de edu), pulse 4\n");
@@ -37,7 +42,36 @@ int main(){
   switch(menu1)
     {
     case '1':
+    comprobacioncontrasena = verificarcontrasena(contrasenadosejemploparaparte2);
+      if (comprobacioncontrasena==1) {
+      
+      int w;
+      
+do
+{
+printf("\n si quiere estudiar la energia hidraulica introduzca 0");
+printf("\n si quiere estudiar la energia de turbinacion de bombeo introduzca 1");
+printf("\n si quiere estudiar la energia nuclear introduzca 2");
+printf("\n si quiere estudiar la energia de carbon introduzca 3");
+printf("\n si quiere estudiar la energia de motores diesel introduzca 4");
+printf("\n si quiere estudiar la energia de turbina de gas introduzca 5");
+printf("\n si quiere estudiar la energia de turbina de vapor introduzca 6");
+printf("\n si quiere estudiar la energia de ciclo combinado introduzca 7");
+printf("\n si quiere estudiar la energia hidroeolica pulse introduzca 8");
+printf("\n si quiere estudiar la energia eolica introduzca 9");
+printf("\n si quiere estudiar la energia solar fotovoltaica introduzca 10");
+printf("\n si quiere estudiar la energia solar termica introduzca 11");
+printf("\n si quiere estudiar la energia de otras renovables introduzca 12 \n \n ");
+scanf("  %i",&w);
+}while (w>12||w<0);
 
+
+
+analiza(w);
+
+      
+      
+	  }
 
 
 break;
@@ -45,9 +79,10 @@ break;
     case '2':
       comprobacioncontrasena = verificarcontrasena(contrasenadosejemploparaparte2);
       if (comprobacioncontrasena==1) {
+      	int mes_cogido_ranquin;
         do 
 		{
-	        printf("Escoja el mes para realizar el ranquin de 2022:\n\n");
+	        printf("Escoja el mes para realizar el ranquin:\n\n");
 	        printf("1. Enero del 2021\t13. Enero del 2022\n");
 	        printf("2. Febrero del 2021\t14. Febrero del 2022\n");
 	        printf("3. Marzo del 2021\t15. Marzo del 2022\n");
@@ -97,14 +132,7 @@ break;
 }
 
        
-    default:
-     
-      break;
-    }
-if (pfl == NULL)
- printf("error al abrir");
-   	
-}
+    
 
 int verificarcontrasena(const char *contrasena) //funcion contraseÃ±a
 {
@@ -242,4 +270,336 @@ void ranquin_absolutos(int mes)
 
 
 
+
+void analiza(int w)
+{
+int x;
+x=w;
+	
+float sanual1, sanual2, tanual1, tanual2, panual1, panual2;	
+float vgraf, vaux;
+int contador=0;
+float max1, max2, max3, max4;	
+char nmax1[10], nmax2[10], nmax3[10], nmax4[10];
+int i=0;
+int r=0;
+int a=-1;	
+char letra;
+	
+FILE *pfl;
+
+energia tipo[20];
+
+pfl=fopen("C:/Users/jaime/Downloads/generacionenergia.csv","r");
+
+if (pfl == NULL)
+ printf("error al abrir archivo");
+ 
+while(i<4)
+  {
+    fscanf(pfl,"%c",&letra);
+     if (letra=='\n')
+     {   
+     i++;
+     }
+  }
+  
+i=0; 
+ 
+fscanf(pfl,"%c",&letra);
+while(fscanf(pfl,"%c",&letra)!= EOF)
+    {
+    	
+     if (letra=='\n')
+     {   
+     a++;
+     fscanf(pfl," %19[^,]",tipo[a].nombre);
+     
+     i=0;
+     }
+     
+    }
+    
+fclose(pfl);    
+
+  
+pfl=fopen("C:/Users/jaime/Downloads/generacionenergia.csv","r");
+ 
+while(i<5)
+  {
+    fscanf(pfl,"%c",&letra);
+     if (letra=='\n')
+     {   
+     i++;
+     }
+  }
+  
+i=0;  
+fscanf(pfl,"%c",&letra);
+a=0;
+ 
+while(fscanf(pfl,"%c",&letra)!= EOF)
+    {  
+     if (letra==',')
+     {  
+     fscanf(pfl,"%f",&tipo[a].vector[i]);
+     //printf("%f",tipo[a].vector[i]);
+     i++;
+     
+     }
+    if (letra=='\n')
+     {   
+     a++;
+     i=0;
+     }
+    }
+    
+    
+printf("%s",tipo[x].nombre);
+    
+
+max1=tipo[x].vector[0];
+if(tipo[x].vector[1]>max1) 
+{
+ contador=contador+1; 
+ max1=tipo[x].vector[1];
+} 
+if(tipo[x].vector[2]>max1) 
+{
+ contador=contador+10; 
+ max1=tipo[x].vector[2];
+} 
+if(tipo[x].vector[3]>max1) 
+{
+ contador=contador+100;
+ max1=tipo[x].vector[3];
+} 
+if(tipo[x].vector[4]>max1) 
+{
+ contador=contador+1000;
+ max1=tipo[x].vector[4];
+} 
+if(tipo[x].vector[5]>max1) 
+{
+ contador=contador+10000; 
+ max1=tipo[x].vector[5];
+}   
+
+
+printf("\n \n Mes pico en el primer medio ano de 2021     ");
+if(contador>-1&&contador<1)  
+ printf("enero");
+if(contador>0&&contador<8)  
+ printf("febrero");
+if(contador>4&&contador<80)  
+ printf("marzo");
+if(contador>40&&contador<800)  
+ printf("abril");
+if(contador>400&&contador<8000)  
+ printf("mayo");
+if(contador>4000)  
+ printf("junio");
+
+printf("  %f GWh",max1) ;
+
+
+contador=0;
+max2=tipo[x].vector[6];
+if(tipo[x].vector[7]>max2) 
+{
+ contador=contador+1; 
+ max2=tipo[x].vector[7];
+} 
+if(tipo[x].vector[8]>max2) 
+{
+ contador=contador+10; 
+ max2=tipo[x].vector[8];
+} 
+if(tipo[x].vector[9]>max2) 
+{
+ contador=contador+100;
+ max2=tipo[x].vector[9];
+} 
+if(tipo[x].vector[10]>max2) 
+{
+ contador=contador+1000;
+ max2=tipo[x].vector[10];
+} 
+if(tipo[x].vector[11]>max2) 
+{
+ contador=contador+10000; 
+ max2=tipo[x].vector[11];
+}   
+
+
+
+printf("\n \n Mes pico en el segundo medio ano de 2021     ");
+if(contador>-1&&contador<1)  
+ printf("julio");
+if(contador>0&&contador<8)  
+ printf("agosto");
+if(contador>4&&contador<80)  
+ printf("septiembre");
+if(contador>40&&contador<800)  
+ printf("octubre");
+if(contador>400&&contador<8000)  
+ printf("noviembre");
+if(contador>4000)  
+ printf("diciembre");
+
+printf("  %f GWh",max2) ;
+
+
+
+contador=0;
+max1=tipo[x].vector[12];
+if(tipo[x].vector[13]>max1) 
+{
+ contador=contador+1; 
+ max1=tipo[x].vector[13];
+} 
+if(tipo[x].vector[14]>max1) 
+{
+ contador=contador+10; 
+ max1=tipo[x].vector[14];
+} 
+if(tipo[x].vector[15]>max1) 
+{
+ contador=contador+100;
+ max1=tipo[x].vector[15];
+} 
+if(tipo[x].vector[16]>max1) 
+{
+ contador=contador+1000;
+ max1=tipo[x].vector[16];
+} 
+if(tipo[x].vector[17]>max1) 
+{
+ contador=contador+10000; 
+ max1=tipo[x].vector[17];
+}   
+//////////////////////////////////////////////////////////////////////
+printf("\n \n Mes pico en el primer medio ano de 2022     ");
+if(contador>-1&&contador<1)  
+ printf("enero");
+if(contador>0&&contador<8)  
+ printf("febrero");
+if(contador>4&&contador<80)  
+ printf("marzo");
+if(contador>40&&contador<800)  
+ printf("abril");
+if(contador>400&&contador<8000)  
+ printf("mayo");
+if(contador>4000)  
+ printf("junio");
+
+printf("  %f GWh",max1) ;
+
+
+contador=0;
+max2=tipo[x].vector[18];
+if(tipo[x].vector[19]>max2) 
+{
+ contador=contador+1; 
+ max2=tipo[x].vector[19];
+} 
+if(tipo[x].vector[20]>max2) 
+{
+ contador=contador+10; 
+ max2=tipo[x].vector[20];
+} 
+if(tipo[x].vector[21]>max2) 
+{
+ contador=contador+100;
+ max2=tipo[x].vector[21];
+} 
+if(tipo[x].vector[22]>max2) 
+{
+ contador=contador+1000;
+ max2=tipo[x].vector[22];
+} 
+if(tipo[x].vector[23]>max2) 
+{
+ contador=contador+10000; 
+ max2=tipo[x].vector[23];
+}   
+
+
+printf("\n \n Mes pico en el segundo medio ano de 2022     ");
+if(contador>-1&&contador<1)  
+ printf("julio");
+if(contador>0&&contador<8)  
+ printf("agosto");
+if(contador>4&&contador<80)  
+ printf("septiembre");
+if(contador>40&&contador<800)  
+ printf("octubre");
+if(contador>400&&contador<8000)  
+ printf("noviembre");
+if(contador>4000)  
+ printf("diciembre");
+
+printf("  %f GWh",max2) ;
+
+
+ 
+printf("\n\n\nGrafica de la evolucion mensual en los años 2021-2022:\n") ;
+printf("\nEnero 2021");
+vgraf=max1/30;
+for(i=0;i<24;i++)
+{
+	if(i==12)
+	 printf("\n Cambio de ano");
+	printf("\n |");
+	vaux=tipo[x].vector[i]/vgraf;
+	for(r=0;r<=vaux;r++)
+	{
+		printf("*");
+	}
+
+}
+printf("\nDiciembre 2022");
+
+
+sanual1=0;
+sanual2=0;
+tanual1=0;
+tanual2=0;
+
+for(i=0;i<12;i++)
+{
+tanual1=tanual1+tipo[16].vector[i];
+}
+
+
+for(i=12;i<24;i++)
+{
+tanual2=tanual2+tipo[16].vector[i];
+}
+
+
+
+for(i=0;i<12;i++)
+{
+sanual1=sanual1+tipo[x].vector[i];
+}
+
+
+for(i=12;i<23;i++)
+{
+sanual2=sanual2+tipo[x].vector[i];
+}
+
+panual1=sanual1/tanual1*100;
+panual2=sanual2/tanual2*100;
+
+printf("\n \n Porcentaje anual respecto al resto de energias en 2021: %f %c",panual1,'%');
+printf("\n \n Porcentaje anual respecto al resto de energias en 2022: %f %c",panual2,'%');
+
+
+printf("\n\n\n");
+  
+      
+	
+}
 
