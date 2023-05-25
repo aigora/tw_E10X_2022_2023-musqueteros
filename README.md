@@ -1,6 +1,7 @@
-# [Título del trabajo]
+# [Base de datos de generacíon de energía 2021-22]
 
-[Descripción breve del proyecto a realizar (2-3 frases).]
+Hemos diseñado 3 funcionalidades para estudiar la generación energética de los últimos dos años. Además, hemos hecho otra funcionalidad con el objetivo de modificar los datos ya existentes.
+
 
 ## Integrantes del equipo
 
