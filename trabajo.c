@@ -354,7 +354,7 @@ while(fscanf(pfl,"%c",&letra)!= EOF)
      }
     }
     
-    
+fclose(pfl);      
 printf("%s",tipo[x].nombre);
     
 
