@@ -20,7 +20,12 @@ typedef struct {
 
 
 int main(){
-	
+	int seleccion, seleccion1, seleccion2, i;
+    	void imprimirColumna(const char *energia, const char *energia1, const char *energia2);
+    	const char *energias[] = {
+		"Hidráulica","Turbinación bombeo","Nuclear","Carbón","Motores diésel","Turbina de gas","Turbina de vapor",
+		"Ciclo combinado","Hidroeólica","Eólica","Solar fotovoltaica","Solar térmica","Otras renovables","Cogeneración",
+		"Residuos no renovables","Residuos renovables","Generación total"    };
     	char comunidad;
 	int vueltaalmenu1;
 	int comprobacioncontrasena;
@@ -111,8 +116,43 @@ break;
       break;
       
     case '3':
-      printf("\nparte de diego:)");
-      break;
+      	printf("\nHa accedido a GENERACION ENTRE COMUNIDADES:\n");
+        comprobacioncontrasena = verificarcontrasena(contrasenadosejemploparaparte2);
+        if (comprobacioncontrasena==1) 
+		{
+			printf("\nCONTRASEÑA CORRECTA.\n");
+			
+			printf("Seleccione una opción:\n");
+    			for (i = 0; i < sizeof(energias) / sizeof(energias[0]); i++)
+			{
+        			printf("%d. %s\n", i + 1, energias[i]);
+    			}
+
+    			printf("Primera energia:\n");
+			scanf("%d", &seleccion);
+	
+			printf("Segunda energia:\n");
+			scanf("%d", &seleccion1);
+	
+			printf("Tercera energia:\n");
+			scanf("%d", &seleccion2);
+
+    			if (seleccion >= 1 && seleccion <= sizeof(energias) / sizeof(energias[0]))
+			{
+        			imprimirColumna(energias[seleccion - 1], energias[seleccion1 - 1], energias[seleccion2 - 1] );
+    			} 
+			else
+			{
+        			printf("Opción inválida.\n");
+    			}
+		} 
+	    else 
+		{
+			printf("CONTRASEÑA INCORRECTA. Acceso denegado.\n");
+        	vueltaalmenu1=1;
+        	break;
+    		}
+		break;
       
     case '4':
       printf("\nparte de edu:)");
@@ -603,3 +643,31 @@ printf("\n\n\n");
 	
 }
 
+void imprimirColumna(const char *energia, const char *energia1, const char *energia2) 
+{
+    FILE *archivo;
+    char linea[500];
+    char *token, *token1, *token2, *token3, *prueba;
+
+    archivo = fopen("generacion_por_tecnologias_21_22_puntos_simplificado (2).txt", "r");
+    if (archivo == NULL)
+    {
+        printf("No se pudo abrir el archivo.\n");
+        return;
+    }
+	printf("%s %s %s", energia, energia1, energia2);
+	printf("\n");
+    	while (fgets(linea, sizeof(linea), archivo) != NULL)
+	{
+		token1 = strtok( linea, ",");    
+		if (strcmp(token1, energia) == 0 || strcmp(token1, energia1) == 0 || strcmp(token1, energia2) == 0)
+		{
+	   		printf( "%s\n", token1 );
+	   		while( (token1 = strtok( NULL, ",")) != NULL )    
+	   		{
+	     			printf( "%s\n", token1);
+			}
+		}
+    }
+    fclose(archivo);
+}
