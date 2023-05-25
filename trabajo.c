@@ -2,6 +2,34 @@
 #include <stdlib.h>
 #include <string.h>
 
+typedef struct{
+	
+int mes;
+int anyo;	
+	
+} fecha;
+
+
+int vector_columna(int k);
+int dar_un_numero(int m, int k);
+void cambiar_numero_1 (float valor, int m);
+void cambiar_numero_2 (float valor, int m);
+void cambiar_numero_3 (float valor, int m);
+void cambiar_numero_4 (float valor, int m);
+void cambiar_numero_5 (float valor, int m);
+void cambiar_numero_6 (float valor, int m);
+void cambiar_numero_7 (float valor, int m);
+void cambiar_numero_8 (float valor, int m);
+void cambiar_numero_9 (float valor, int m);
+void cambiar_numero_10 (float valor, int m);
+void cambiar_numero_11 (float valor, int m);
+void cambiar_numero_12 (float valor, int m);
+void cambiar_numero_13 (float valor, int m);
+void cambiar_numero_14 (float valor, int m);
+void cambiar_numero_15 (float valor, int m);
+void cambiar_numero_16 (float valor, int m);
+void cambiar_numero_17 (float valor, int m);
+
 typedef struct
 {
 	char nombre[20];
@@ -20,6 +48,15 @@ typedef struct {
 
 
 int main(){
+	
+	
+float valor;
+  int n, n1, k, m;
+  int  bucle= 0;
+  fecha gen;
+  char l1, l;
+  const char *password= "elNANO33";	
+	
 	int seleccion, seleccion1, seleccion2, i;
     	void imprimirColumna(const char *energia, const char *energia1, const char *energia2);
     	const char *energias[] = {
@@ -155,7 +192,5664 @@ break;
 		break;
       
     case '4':
-      printf("\nparte de edu:)");
+
+       
+  comprobacioncontrasena2 = verificarcontrasena(password);
+      if (comprobacioncontrasena2==1) {
+
+  
+  while(bucle != 33)
+  {
+    printf("\nQue datos de generacion quieres ver?.\n \n");
+  
+    printf("Para ver Hidraulica pulse 1.\n");
+    printf("Para ver Turbinacion Bombeo pulse 2.\n");
+    printf("Para ver Nuclear pulse 3.\n");
+    printf("Para ver Carbon pulse 4.\n");
+    printf("Para ver Motores diesel pulse 5.\n");
+    printf("Para ver Turbina de gas pulse 6.\n");
+    printf("Para ver Turvina de vapor pulse 7.\n");
+    printf("Para ver Ciclo combinado pulse 8.\n");
+    printf("Para ver Hidroeolica pulse 9.\n");
+    printf("Para ver Eolica pulse 10.\n");
+    printf("Para ver Solar fotovoltaica pulse 11.\n");
+    printf("Para ver Solar termica pulse 12.\n");
+    printf("Para ver Otras renovables pulse 13.\n");
+    printf("Para ver Cogeneracion pulse 14.\n");
+    printf("Para ver Residuos no renovables pulse 15.\n");
+    printf("Para ver Residuos renovables pulse 16.\n");
+    printf("Para ver Generacion total pulse 17.\n");
+    printf("Para cerrar el programa pulse 18.\n \n");
+  
+    k=3;  
+     
+    scanf("%i", &n);
+    switch(n)
+    {
+      case 1:
+
+      	  k++;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_1(valor, m);
+                  	 }
+                  	 break;
+					 }
+					default:
+                      printf("ERROR, pulse alguno de los numeros indicados");
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;
+      
+      case 2:
+         
+      	  k=5;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_2(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;	  
+        
+      
+      case 3:
+
+      	  k=6;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_3(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;	  
+ 
+      case 4:
+      	
+      	  k=7;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_4(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;
+      
+      case 5:
+      	  
+      	  k=8;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_5(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;
+      
+      case 6:
+      
+      	  k=9;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_6(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;	  
+
+      case 7:
+      	 
+      	  k=10;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_7(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;
+      
+      case 8:
+      
+	        	  k=11;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_8(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;
+      
+      case 9:
+      	 
+	      k=12;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_9(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;
+      
+      case 10:
+      	
+	  k=13;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_10(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;
+      
+      case 11:
+      	
+      k=14;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_11(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;
+      
+      case 12:
+      	
+          k=15;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_12(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;
+      
+      case 13:
+      	  
+          k=16;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_13(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;
+    
+      case 14:
+      	  
+          k=17;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_14(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;
+
+      case 15:
+      	  
+      k=18;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_15(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;
+      
+      case 16:
+      	  
+          k=19;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_16(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;
+      
+      case 17:
+      	 
+          k=20;
+		  printf("\nQue quieres hacer?\n");
+		  
+		  printf("Para ver la generacion durante todo los meses pulse 1\n");
+		  printf("Para ver la generacion de un mes y cambiarla pulse 2\n");
+		  printf("Para volver al menu anterior pulse 3\n");
+		  
+		  scanf("%i", &n1);
+		  switch(n1)
+		  { 
+		  	case 1:
+		  		printf("Aqui esta la generacion de todos los meses del 1-2021 al 12-2022:\n");
+		  		vector_columna(k);
+		  		
+		  		break;
+		  	case 2:
+		  	  printf("\nCual mes quieres ver?\n");
+              printf("(Ejemplo: 1 2021====>enero 2021)\n");
+              scanf("%i %i", &gen.mes, &gen.anyo);
+              switch(gen.anyo)
+                {
+                  case 2021:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=0;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                     scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=1;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=2;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=3;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=4;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l); //tengo que poner 2, para que lea 1   	 
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=5;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's' )
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=6;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=7;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=8;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=9;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=10;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=11;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+					 }
+                  	break;
+                  case 2022:
+                  	switch(gen.mes)
+                  	{
+                  	case 1:
+                  	 m=12;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                     }
+                     break;
+                    case 2:
+                  	 m=13;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                     }
+                     break;
+                    case 3:
+                  	 m=14;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l == 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 4:
+                  	 m=15;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 5:
+                  	 m=16;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 6:
+                  	 m=17;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 7:
+                  	 m=18;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 8:
+                  	 m=19;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 9:
+                  	 m=20;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 10:
+                  	 m=21;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 11:
+                  	 m=22;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+                    case 12:
+                  	 m=23;
+                  	 dar_un_numero(m, k);
+                  	 printf("Quieres cambiarlo?(s==si) \n");
+                  	 scanf(" %c", &l);
+                  	 if(l== 's')
+                  	 {
+                  	 	printf("Que valor quieres poner? \n");
+                  	 	scanf("%f", &valor);
+                  	 	cambiar_numero_17(valor, m);
+                  	 }
+                  	 break;
+					 }
+					
+                  	break;		
+					}
+              break;
+        
+            default:
+              printf("ERROR, pulse alguno de los numeros indicados");
+		  }	     	  
+      break;
+      
+      case 18:
+      	printf("Programa finalizado");
+        return -1; 
+	  
+      break;
+        default:
+        printf("ERROR, pulse alguno de los numeros indicados");
+     }
+   }
+    }
+		  
+		  
       break;
       
       case '5':
@@ -671,3 +6365,3598 @@ void imprimirColumna(const char *energia, const char *energia1, const char *ener
     }
     fclose(archivo);
 }
+
+
+int vector_columna(int k) {
+  long int i;
+  float prueba[23];
+  char numero[500], letra[500], bucle;
+
+  FILE *pf;
+
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+  }
+  else
+  { 
+    for(i=0; i<=k; i++)
+    {
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", numero);
+    }
+    
+    fseek(pf, 1,  1);
+    char aux1[30], aux2;
+    fscanf(pf, "%[^,]s", aux1);
+    printf("%s \n", aux1);
+    fscanf(pf, "%c  ", &aux2);
+    
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]); 
+    fscanf(pf, "%c", &bucle);
+    printf("%f\n", prueba[i]);
+	}
+    int fclose (FILE *pf);
+  }
+}
+
+int dar_un_numero(int m, int k) {
+  float prueba[23];
+  long int i;
+  char numero[500], letra[300];
+  char bucle;
+
+  FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    return -1;
+  }
+  else
+  {
+ 
+    for(i=0; i<=k; i++)
+    {
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", numero);
+    }
+        
+    char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    printf("%s \n", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);    
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]); 
+    fscanf(pf, "%c", &bucle);
+	}
+	printf("%f \n", prueba[m]);
+	
+	int fclose (FILE *pf);
+  }
+}
+
+void cambiar_numero_1 (float valor, int m) {
+	
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena7[400], cadena8[400]; 
+	char cadena9[400], cadena10[400], cadena11[400], cadena12[400], cadena13[400], cadena14[400], cadena15[400];  
+	char cadena16[400], cadena17[400], cadena18[400], cadena19[400], cadena20[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+	
+    FILE *ph;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  ph = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (ph == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(ph, 0,  1);
+    fscanf(ph, "%[^\n]", cadena1);
+    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena2);
+        
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena3);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena4);
+    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena5);
+    
+    char aux1[30], aux2;
+    fseek(ph, 1, 1);
+    fscanf(ph, "%[^,]s", aux1);
+    
+    fscanf(ph, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(ph, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(ph, "%c", &aux2);
+	}
+    prueba[m]= valor;
+        
+	
+	fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena7);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena8);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena9);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena10);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena11);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena12);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena13);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena14);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena15);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena16);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena17);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena18);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena19);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena20);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena21);
+	    
+    fseek(ph, 1,  1);
+    fscanf(ph, "%[^\n]", cadena22);
+    
+    int fclose (FILE *ph);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		
+		fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");
+		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_2 (float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena8[400]; 
+	char cadena9[400], cadena10[400], cadena11[400], cadena12[400], cadena13[400], cadena14[400], cadena15[400];  
+	char cadena16[400], cadena17[400], cadena18[400], cadena19[400], cadena20[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+    
+    char aux1[50], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+    
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		
+		fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");
+		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_3 (float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena9[400], cadena10[400], cadena11[400], cadena12[400], cadena13[400], cadena14[400], cadena15[400];  
+	char cadena16[400], cadena17[400], cadena18[400], cadena19[400], cadena20[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+    
+    
+       char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+	    
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		
+		fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");
+		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_4 (float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena8[400], cadena10[400], cadena11[400], cadena12[400], cadena13[400], cadena14[400], cadena15[400];  
+	char cadena16[400], cadena17[400], cadena18[400], cadena19[400], cadena20[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+	    
+	    char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+	    
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+		
+		
+		fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");		
+		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_5 (float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena8[400], cadena9[400], cadena11[400], cadena12[400], cadena13[400], cadena14[400], cadena15[400];  
+	char cadena16[400], cadena17[400], cadena18[400], cadena19[400], cadena20[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+    
+    
+    char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+	    
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+		
+				
+		fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");		
+		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_6 (float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena8[400], cadena9[400], cadena10[400], cadena12[400], cadena13[400], cadena14[400], cadena15[400];  
+	char cadena16[400], cadena17[400], cadena18[400], cadena19[400], cadena20[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+	    
+	char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+	    
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+		
+		
+		fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");
+		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_7 (float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena8[400], cadena9[400], cadena10[400], cadena11[400], cadena13[400], cadena14[400], cadena15[400];  
+	char cadena16[400], cadena17[400], cadena18[400], cadena19[400], cadena20[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+	
+	    
+	char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+	
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+		
+		
+		fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");
+		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_8 (float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena8[400], cadena9[400], cadena10[400], cadena11[400], cadena12[400], cadena14[400], cadena15[400];  
+	char cadena16[400], cadena17[400], cadena18[400], cadena19[400], cadena20[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    
+	    
+	char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+	    
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+		
+		
+		fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");
+		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_9 (float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena8[400], cadena9[400], cadena10[400], cadena11[400], cadena12[400], cadena13[400], cadena15[400];  
+	char cadena16[400], cadena17[400], cadena18[400], cadena19[400], cadena20[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+    
+    char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+			
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		
+		fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");
+		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_10(float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena8[400], cadena9[400], cadena10[400], cadena11[400], cadena12[400], cadena13[400], cadena14[400];  
+	char cadena16[400], cadena17[400], cadena18[400], cadena19[400], cadena20[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+	    
+	        
+    char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+    
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+			
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		
+		fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");
+		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_11(float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena8[400], cadena9[400], cadena10[400], cadena11[400], cadena12[400], cadena13[400], cadena14[400];  
+	char cadena15[400], cadena17[400], cadena18[400], cadena19[400], cadena20[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	    
+	char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+			
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+		
+				
+		fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");
+		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_12(float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena8[400], cadena9[400], cadena10[400], cadena11[400], cadena12[400], cadena13[400], cadena14[400];  
+	char cadena15[400], cadena16[400], cadena18[400], cadena19[400], cadena20[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+    
+    char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+			
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_13(float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena8[400], cadena9[400], cadena10[400], cadena11[400], cadena12[400], cadena13[400], cadena14[400];  
+	char cadena15[400], cadena16[400], cadena17[400], cadena19[400], cadena20[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+			
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");
+		
+		fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_14(float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena8[400], cadena9[400], cadena10[400], cadena11[400], cadena12[400], cadena13[400], cadena14[400];  
+	char cadena15[400], cadena16[400], cadena17[400], cadena18[400], cadena20[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+			
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		
+		fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");
+		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_15(float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena8[400], cadena9[400], cadena10[400], cadena11[400], cadena12[400], cadena13[400], cadena14[400];  
+	char cadena15[400], cadena16[400], cadena17[400], cadena18[400], cadena19[400], cadena21[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+    
+    
+    char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+	    
+	    
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+			
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+	    fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_16(float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena8[400], cadena9[400], cadena10[400], cadena11[400], cadena12[400], cadena13[400], cadena14[400];  
+	char cadena15[400], cadena16[400], cadena17[400], cadena18[400], cadena19[400], cadena20[400], cadena22[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+	char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena22);
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+			
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");
+		
+	    fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena22);
+		fprintf(pg,"\n");
+			
+        fclose(pg);	
+	}
+  }	
+}
+
+void cambiar_numero_17(float valor, int m) {
+	char cadena1[400], cadena2[400], cadena3[400], cadena4[400], cadena5[400], cadena6[400], cadena7[400]; 
+	char cadena8[400], cadena9[400], cadena10[400], cadena11[400], cadena12[400], cadena13[400], cadena14[400];  
+	char cadena15[400], cadena16[400], cadena17[400], cadena18[400], cadena19[400], cadena20[400], cadena21[400];
+	int i; 
+	float prueba[23];
+    FILE *pf;
+  // Atención a los separadores en la ruta del fichero, 
+  //y a las comillas dobles
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+
+  if (pf == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+
+  }
+  else
+  {  
+    fseek(pf, 0,  1);
+    fscanf(pf, "%[^\n]", cadena1);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena2);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena3);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena4);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena5);
+    
+	fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena6);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena7);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena8);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena9);
+        
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena10);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena11);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena12);
+	    	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena13);
+
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena14);
+    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena15);
+	
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena16);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena17);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena18);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena19);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena20);
+	    
+    fseek(pf, 1,  1);
+    fscanf(pf, "%[^\n]", cadena21);
+    
+    char aux1[30], aux2;
+    fseek(pf, 1, 1);
+    fscanf(pf, "%[^,]s", aux1);
+    
+    fscanf(pf, "%c  ", &aux2);
+    for(i=0; i<=23; i++)
+    {
+    fscanf(pf, "%f", &prueba[i]);
+    if(i!= 23)
+    fscanf(pf, "%c", &aux2);
+	}
+    prueba[m]= valor;
+    
+    
+    int fclose (FILE *pf);
+    
+    FILE *pg;
+    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    
+    if (pg == NULL)
+  {
+    printf("Error al abrir el fichero.\n");
+    
+  }
+    else
+	{
+		fprintf(pg,"%s", cadena1);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena2);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena3);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena4);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena5);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena6);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena7);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena8);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena9);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena10);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena11);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena12);
+		fprintf(pg,"\n");
+			
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena13);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena14);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena15);
+		fprintf(pg,"\n");
+	
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena16);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena17);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena18);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena19);
+		fprintf(pg,"\n");
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena20);
+		fprintf(pg,"\n");		
+		
+		fseek(pg, 0,  2);
+		fprintf(pg,"%s", cadena21);
+		fprintf(pg,"\n");
+			
+	    fprintf(pg,"%s", aux1);
+		fprintf(pg,",");
+		for (i=0; i<=23; i++)
+		{
+		   fprintf(pg, "%f", prueba[i]);
+		   if(i!= 23)
+	       fprintf(pg,",");
+		}
+		fprintf(pg,"\n");	
+			
+        fclose(pg);	
+	}
+  }	
+}
+
