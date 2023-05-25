@@ -55,7 +55,8 @@ float valor;
   int  bucle= 0;
   fecha gen;
   char l1, l;
-  const char *password= "elNANO33";	
+  const char *password= "elNANO33";
+	int comprobacioncontrasena2;
 	
 	int seleccion, seleccion1, seleccion2, i;
     	void imprimirColumna(const char *energia, const char *energia1, const char *energia2);
