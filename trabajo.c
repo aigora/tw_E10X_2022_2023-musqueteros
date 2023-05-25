@@ -114,7 +114,13 @@ analiza(w);
       
       
 	  }
-
+else 
+		{
+			printf("CONTRASEÑA INCORRECTA. Acceso denegado.\n");
+        	vueltaalmenu1=1;
+        	break;
+    		}
+		break;
 
 break;
       
@@ -5848,6 +5854,13 @@ break;
      }
    }
     }
+else 
+	{
+		printf("CONTRASEÑA INCORRECTA. Acceso denegado.\n");
+	vueltaalmenu1=1;
+	break;
+	}
+	break;	  
 		  
 		  
       break;
