@@ -25,14 +25,14 @@ int main(){
 	int vueltaalmenu1;
 	int comprobacioncontrasena;
     	const char *contrasenadosejemploparaparte2 = "acelgas"; //para de momento nos vale
-	printf("(introduccion del trabajo, explicaciones y contraseñas)\n\n");
+	printf("(introduccion del trabajo, explicaciones y contraseÃ±as)\n\n");
 	do {//bucle para volver al menu principal
 	
 	vueltaalmenu1=0;//en caso de volver necesitar volver al menu, se cambiara la variable por 1 y volvera al bucle
 	
 	
-	printf("si quiere pasar a Analisis detallado de 1 Energia(jaime)), pulse 1\n");
-	printf("si quiere pasar a (parte de Aianra), pulse 2\n");
+	printf("si quiere pasar a Analisis detallado de 1 Energia(jaime), pulse 1\n");
+	printf("si quiere pasar a el ranquin mensual de la generación de los distintos tipos de energías, pulse 2\n");
 	printf("si quiere pasar a (parte de Diego), pulse 3\n");
 	printf("si quiere pasar a (parte de edu), pulse 4\n");
 	printf("si quiere cerrar el programa, pulse 5\n");
@@ -95,7 +95,7 @@ break;
 	        printf("10. Octubre del 2021\t22. Octubre del 2022\n");
 	        printf("11. Noviembre del 2021\t23. Noviembre del 2022\n");
 	        printf("12. Diciembre del 2021\t24. Diciembre del 2022\n");
-	        printf("\nEscriba el número indicado al lado del mes deseado: ");
+	        printf("\nEscriba el nÃºmero indicado al lado del mes deseado: ");
 	        scanf("%i", &mes_cogido_ranquin);
 	    } while (mes_cogido_ranquin <= 0 || mes_cogido_ranquin >= 25);
 	
@@ -104,7 +104,7 @@ break;
         
     	} 
 	  else {
-        printf("Contraseña incorrecta. Acceso denegado.\n");
+        printf("ContraseÃ±a incorrecta. Acceso denegado.\n");
         vueltaalmenu1=1;
         break;
     	}
@@ -134,16 +134,16 @@ break;
        
     
 
-int verificarcontrasena(const char *contrasena) //funcion contraseña
+int verificarcontrasena(const char *contrasena) //funcion contraseÃ±a
 {
 	int i=0, j=0;
 	char respuesta[10];
     for (i=0; i<=2; i++){
-    	printf("porfavor introduzca la contraseña\nte quedan %i  intentos\n", 3-i);
+    	printf("porfavor introduzca la contraseÃ±a\nte quedan %i  intentos\n", 3-i);
     	scanf("%s", respuesta);
     if (strcmp(contrasena, respuesta) == 0) {
     	j=1;
-        break; // las contraseñas son iguales asique es valida
+        break; // las contraseÃ±as son iguales asique es valida
     	}
 	}
 	return j;
@@ -193,7 +193,7 @@ float datos_tabla(const char* filausuario, int numuero_columna)
         } 
 	    else 
 	    {
-            printf("No se encontró la fila especificada.\n");
+            printf("No se encontrÃ³ la fila especificada.\n");
             fclose(archivo);
             return 0.0f;
         }
@@ -204,42 +204,42 @@ void ranquin_absolutos(int mes)
 {
     int i, j, n = 16; 
     float numTotal;
-    const char* hidraulica = "Hidráulica";
-    const char* turbinacion = "Turbinación bombeo";
+    const char* hidraulica = "HidrÃ¡ulica";
+    const char* turbinacion = "TurbinaciÃ³n bombeo";
     const char* nucelar = "Nuclear";
-    const char* carbon = "Carbón";
-    const char* diesel = "Motores diésel";
+    const char* carbon = "CarbÃ³n";
+    const char* diesel = "Motores diÃ©sel";
     const char* tgas = "Turbina de gas";
     const char* tvapor = "Turbina de vapor";
     const char* cicloc = "Ciclo combinado";
-    const char* hidroeolica = "Hidroeólica";
-    const char* eolica = "Eólica";
+    const char* hidroeolica = "HidroeÃ³lica";
+    const char* eolica = "EÃ³lica";
     const char* fotovoltaica = "Solar fotovoltaica";
-    const char* stermico = "Solar térmica";
+    const char* stermico = "Solar tÃ©rmica";
     const char* otrasr = "Otras renovables";
-    const char* congeneracion = "Cogeneración";
+    const char* congeneracion = "CogeneraciÃ³n";
     const char* rnr = "Residuos no renovables";
     const char* rr = "Residuos renovables";
-    const char* total = "Generación total";
+    const char* total = "GeneraciÃ³n total";
     float aux1, aux3;
     char aux2[40];
     numTotal = datos_tabla(total, mes);
     ranquin vector_ranquin[17] = 
 	{ 
-        {"Hidráulica", datos_tabla(hidraulica, mes), ((datos_tabla(hidraulica, mes) / numTotal) * 100)},
-        {"Turbinación bombeo", datos_tabla(turbinacion, mes), ((datos_tabla(turbinacion, mes) / numTotal) * 100)},
+        {"HidrÃ¡ulica", datos_tabla(hidraulica, mes), ((datos_tabla(hidraulica, mes) / numTotal) * 100)},
+        {"TurbinaciÃ³n bombeo", datos_tabla(turbinacion, mes), ((datos_tabla(turbinacion, mes) / numTotal) * 100)},
         {"Nuclear", datos_tabla(nucelar, mes), ((datos_tabla(nucelar, mes) / numTotal) * 100)},
-        {"Motores diésel", datos_tabla(diesel, mes), ((datos_tabla(diesel, mes) / numTotal) * 100)},
-        {"Carbón", datos_tabla(carbon, mes), ((datos_tabla(carbon, mes) / numTotal) * 100)},
+        {"Motores diÃ©sel", datos_tabla(diesel, mes), ((datos_tabla(diesel, mes) / numTotal) * 100)},
+        {"CarbÃ³n", datos_tabla(carbon, mes), ((datos_tabla(carbon, mes) / numTotal) * 100)},
         {"Turbina de gas", datos_tabla(tgas, mes), ((datos_tabla(tgas, mes) / numTotal) * 100)},
         {"Turbina de vapor", datos_tabla(tvapor, mes), ((datos_tabla(tvapor, mes) / numTotal) * 100)},
         {"Ciclo combinado", datos_tabla(cicloc, mes), ((datos_tabla(cicloc, mes) / numTotal) * 100)},
-        {"Hidroeólica", datos_tabla(hidroeolica, mes), ((datos_tabla(hidroeolica, mes) / numTotal) * 100)},
-        {"Eólica", datos_tabla(eolica, mes), ((datos_tabla(eolica, mes) / numTotal) * 100)},
+        {"HidroeÃ³lica", datos_tabla(hidroeolica, mes), ((datos_tabla(hidroeolica, mes) / numTotal) * 100)},
+        {"EÃ³lica", datos_tabla(eolica, mes), ((datos_tabla(eolica, mes) / numTotal) * 100)},
         {"Solar fotovoltaica", datos_tabla(fotovoltaica, mes), ((datos_tabla(fotovoltaica, mes) / numTotal) * 100)},
-        {"Solar térmica", datos_tabla(stermico, mes), ((datos_tabla(stermico, mes) / numTotal) * 100)},
+        {"Solar tÃ©rmica", datos_tabla(stermico, mes), ((datos_tabla(stermico, mes) / numTotal) * 100)},
         {"Otras renovables", datos_tabla(otrasr, mes), ((datos_tabla(otrasr, mes) / numTotal) * 100)},
-        {"Cogeneración", datos_tabla(congeneracion, mes), ((datos_tabla(congeneracion, mes) / numTotal) * 100)},
+        {"CogeneraciÃ³n", datos_tabla(congeneracion, mes), ((datos_tabla(congeneracion, mes) / numTotal) * 100)},
         {"Residuos no renovables", datos_tabla(rnr, mes), ((datos_tabla(rnr, mes) / numTotal) * 100)},
         {"Residuos renovables", datos_tabla(rr, mes), ((datos_tabla(rr, mes) / numTotal) * 100)}
     };
@@ -261,11 +261,11 @@ void ranquin_absolutos(int mes)
         }
     }
     printf("La tabla ordenada de mayor a menor:\n");
-    printf("Generación (GWh):\tPorcentaje:\tTipo de energía:\n");
+    printf("GeneraciÃ³n (GWh):\tPorcentaje:\tTipo de energÃ­a:\n");
     for (i = n - 1; i >= 0; i--) { 
         printf("%f\t\t %.2f \t\t%s\n", vector_ranquin[i].numero, vector_ranquin[i].porcentaje, vector_ranquin[i].nombre);
     }
-    printf("\nLa generación total fue: %f\n", numTotal);
+    printf("\nLa generaciÃ³n total fue: %f\n", numTotal);
 }
 
 
@@ -543,7 +543,7 @@ printf("  %f GWh",max2) ;
 
 
  
-printf("\n\n\nGrafica de la evolucion mensual en los a�os 2021-2022:\n") ;
+printf("\n\n\nGrafica de la evolucion mensual en los años 2021-2022:\n") ;
 printf("\nEnero 2021");
 vgraf=max1/30;
 for(i=0;i<24;i++)
