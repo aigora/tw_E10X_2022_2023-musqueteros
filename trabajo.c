@@ -52,6 +52,7 @@ void analiza(int w);
 int verificarcontrasena(const char *contrasena);
 void ranquin_absolutos(int mes);
 float datos_tabla(const char* filausuario, int numuero_columna);
+void imprimirColumna(const char *energia, const char *energia1, const char *energia2);
 
 
 int main()
@@ -65,7 +66,7 @@ float valor;
 	int comprobacioncontrasena2;
 	
 	int seleccion, seleccion1, seleccion2, i;
-    	void imprimirColumna(const char *energia, const char *energia1, const char *energia2);
+    	
     	const char *energias[] = {
 		"Hidráulica","Turbinación bombeo","Nuclear","Carbón","Motores diésel","Turbina de gas","Turbina de vapor",
 		"Ciclo combinado","Hidroeólica","Eólica","Solar fotovoltaica","Solar térmica","Otras renovables","Cogeneración",
@@ -76,7 +77,6 @@ float valor;
     	const char *contrasenadosejemploparaparte2 = "acelgas"; //para de momento nos vale
 	printf("(introduccion del trabajo, explicaciones y contraseñas)\n\n");
 	do {//bucle para volver al menu principal
-	
 	vueltaalmenu1=0;//en caso de volver necesitar volver al menu, se cambiara la variable por 1 y volvera al bucle
 	
 	
