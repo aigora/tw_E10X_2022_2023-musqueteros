@@ -1,6 +1,9 @@
 /*A continuación están indicadas las líneas en las que se encuentra los fopen para poder poner la dirección del archivo en caso de
  necesitarlo: 5902, 6041, 6074, 6360, 6391, 6430, 6474, 6563, 6681, 6770, 6888, 6978, 7096, 7186, 7304, 7394, 7512, 7602, 7720, 
-7810, 7928, 8018, 8136, 8228, 8342, 8432, 8550, 8638, 8756, 8844, 8960, 9048, 9164, 9252, 9370, 9461, 9577, 9667, 9781, 9876*/
+7810, 7928, 8018, 8136, 8228, 8342, 8432, 8550, 8638, 8756, 8844, 8960, 9048, 9164, 9252, 9370, 9461, 9577, 9667, 9781, 9876
+
+La contrasena para la parte 1, 2 y 3 es: acelgas. Para la parte 4: elNANO33
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
