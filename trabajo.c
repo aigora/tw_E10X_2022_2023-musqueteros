@@ -81,9 +81,9 @@ float valor;
 	
 	
 	printf("si quiere pasar a Analisis detallado de 1 Energia(jaime), pulse 1\n");
-	printf("si quiere pasar a el ranquin mensual de la generación de los distintos tipos de energías, pulse 2\n");
+	printf("si quiere pasar a el ranquin mensual de la generación de los distintos tipos de energías (ainara), pulse 2\n");
 	printf("si quiere pasar a (parte de Diego), pulse 3\n");
-	printf("si quiere pasar a (parte de edu), pulse 4\n");
+	printf("si quiere modificar los datos del fichero(eduardo), pulse 4\n");
 	printf("si quiere cerrar el programa, pulse 5\n");
 	
   char menu1;
