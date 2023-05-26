@@ -16,6 +16,17 @@ int anyo;
 	
 } fecha;
 
+typedef struct
+{
+	char nombre[20];
+	float vector[24];
+}energia;
+
+typedef struct {
+    char nombre[40];
+    float numero;
+    float porcentaje;
+} ranquin;
 
 int vector_columna(int k);
 int dar_un_numero(int m, int k);
@@ -37,26 +48,14 @@ void cambiar_numero_15 (float valor, int m);
 void cambiar_numero_16 (float valor, int m);
 void cambiar_numero_17 (float valor, int m);
 
-typedef struct
-{
-	char nombre[20];
-	float vector[24];
-}energia;
 void analiza(int w);
 int verificarcontrasena(const char *contrasena);
 void ranquin_absolutos(int mes);
 float datos_tabla(const char* filausuario, int numuero_columna);
 
-typedef struct {
-    char nombre[40];
-    float numero;
-    float porcentaje;
-} ranquin;
 
-
-int main(){
-	
-	
+int main()
+{		
 float valor;
   int n, n1, k, m;
   int  bucle= 0;
