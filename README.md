@@ -25,7 +25,11 @@ La funcionalidad número 1 en el menú se encarga de hacer un análisis estadís
 
 La funcionalidad número 2 en el menú se encarga de ordenar la gneración de energía en un rango temporal seleccionado dejando las energias mas significantes y con mayor aportación energética al total en primer lugar y en último lugar las menos significantes.
 
+La funcionalidad nímero 3 en el menú tiene el propósito de que escojas 2 o 3 tipos de energía para elaborarte una tabla incluyendo todos los meses de los años 2021-2022 en la que se puedan cambiar los valores de energía aportados por parte de cada tipo de extracción.
 
+La funcionalidad numero 4 en el menú es para poder modificar los datos del fichero y tambien para poder mostrarlos por pantalla si lo necesitaras antes o después de cambiarlos.
+
+Ademas todas estan funcionalidades estan en un menú el cual después de preguntarte a qur funcionalidad desea acceder esta gestionado con un sistema de contraseñas, las tres primeras funcionalidades e  las que tan solo se accede a los datos para distintos calculos tablas y ordenaciones sin posibilidad se puede acceder con una contraseña,
 
 
 
