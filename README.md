@@ -19,8 +19,13 @@ Usuario: Jaimeeeeeeee04
 
 
 ## Objetivos del trabajo
+Hemos elaborado cuatro funcionalidades diferentes relacionadas con la generacion de energia en los años 2021-2022. 
 
-[Lista de los objetivos que se persiguen con el trabajo propuesto.]
+La funcionalidad número 1 en el menú se encarga de hacer un análisis estadístico de un tipo de energía que escojas aportando los máximos en periodos de seis meses, una gráfica de ambos años de como progresa la generacion de ese tipo de energía, y finalmente los porcentajes anuales que representan ese tipo de generación energética respecto al total de energías dicho año.
+
+La funcionalidad número 2 en el menú se encarga de ordenar la gneración de energía en un rango temporal seleccionado dejando las energias mas significantes y con mayor aportación energética al total en primer lugar y en último lugar las menos significantes.
+
+
 
 
 
