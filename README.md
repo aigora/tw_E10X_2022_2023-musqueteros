@@ -19,17 +19,17 @@ Usuario: Jaimeeeeeeee04
 
 
 ## Objetivos del trabajo
-Hemos elaborado cuatro funcionalidades diferentes relacionadas con la generacion de energia en los años 2021-2022. 
+Hemos elaborado cuatro funcionalidades diferentes relacionadas con la generación de energía en los años 2021-2022. 
 
-La funcionalidad número 1 en el menú se encarga de hacer un análisis estadístico de un tipo de energía que escojas aportando los máximos en periodos de seis meses, una gráfica de ambos años de como progresa la generacion de ese tipo de energía, y finalmente los porcentajes anuales que representan ese tipo de generación energética respecto al total de energías dicho año.
+La funcionalidad número 1 en el menú se encarga de hacer un análisis estadístico de un tipo de energía que escojas aportando los máximos en periodos de seis meses, una gráfica de ambos años de como progresa la generación de ese tipo de energía, y finalmente los porcentajes anuales que representan ese tipo de generación energética respecto al total de energías dicho año.
 
-La funcionalidad número 2 en el menú se encarga de ordenar la gneración de energía en un rango temporal seleccionado dejando las energias mas significantes y con mayor aportación energética al total en primer lugar y en último lugar las menos significantes.
+La funcionalidad número 2 en el menú se encarga de ordenar la generación de energía en un rango temporal seleccionado dejando las energías mas significantes y con mayor aportación energética al total en primer lugar y en último lugar las menos significantes.
 
-La funcionalidad nímero 3 en el menú tiene el propósito de que escojas 2 o 3 tipos de energía para elaborarte una tabla incluyendo todos los meses de los años 2021-2022 en la que se puedan cambiar los valores de energía aportados por parte de cada tipo de extracción.
+La funcionalidad número 3 en el menú tiene el propósito de que escojas 2 o 3 tipos de energía para elaborarte una tabla incluyendo todos los meses de los años 2021-2022 en la que se puedan cambiar los valores de energía aportados por parte de cada tipo de extracción.
 
-La funcionalidad numero 4 en el menú es para poder modificar los datos del fichero y tambien para poder mostrarlos por pantalla si lo necesitaras antes o después de cambiarlos.
+La funcionalidad numero 4 en el menú es para poder modificar los datos del fichero y también para poder mostrarlos por pantalla si lo necesitaras antes o después de cambiarlos.
 
-Además todas están funcionalidades estan en un menú el cual después de preguntarte a qur funcionalidad desea acceder esta gestionado con un sistema de contraseñas, las tres primeras funcionalidades e  las que tan solo se accede a los datos para distintos calculos tablas y ordenaciones sin posibilidad de cambiar datos se puede acceder con una contraseña (acelgas) las cual corresponderia a un rango inferior, y para acceder a la funcionalidad en la cual se pueden modificar los datos del fichero se necesita otas contraseña (elNANO33), que correspondería a un rango superior.
+Además todas están funcionalidades estan en un menú el cual después de preguntarte a que funcionalidad desea acceder esta gestionado con un sistema de contraseñas, las tres primeras funcionalidades en las que tan solo se accede a los datos para distintos calculos tablas y ordenaciones sin posibilidad de cambiar datos se puede acceder con una contraseña (acelgas) las cual corresponderia a un rango inferior, y para acceder a la funcionalidad en la cual se pueden modificar los datos del fichero se necesita otas contraseña (elNANO33), que correspondería a un rango superior.
 
 
 
