@@ -29,7 +29,7 @@ La funcionalidad nímero 3 en el menú tiene el propósito de que escojas 2 o 3 
 
 La funcionalidad numero 4 en el menú es para poder modificar los datos del fichero y tambien para poder mostrarlos por pantalla si lo necesitaras antes o después de cambiarlos.
 
-Ademas todas estan funcionalidades estan en un menú el cual después de preguntarte a qur funcionalidad desea acceder esta gestionado con un sistema de contraseñas, las tres primeras funcionalidades e  las que tan solo se accede a los datos para distintos calculos tablas y ordenaciones sin posibilidad se puede acceder con una contraseña,
+Además todas están funcionalidades estan en un menú el cual después de preguntarte a qur funcionalidad desea acceder esta gestionado con un sistema de contraseñas, las tres primeras funcionalidades e  las que tan solo se accede a los datos para distintos calculos tablas y ordenaciones sin posibilidad de cambiar datos se puede acceder con una contraseña (acelgas) las cual corresponderia a un rango inferior, y para acceder a la funcionalidad en la cual se pueden modificar los datos del fichero se necesita otas contraseña (elNANO33), que correspondería a un rango superior.
 
 
 
