@@ -1,5 +1,5 @@
 /*A continuación están indicadas las líneas en las que se encuentra los fopen para poder poner la dirección del archivo en caso de
- necesitarlo: 5908, 6047, 6080, 6397, 6397, 6436, 6480, 6569, 6687, 6776, 6894, 6984, 7102, 7192, 7310, 7400, 7518, 7608, 7726, 7816,
+ necesitarlo: 5908, 6047, 6080, 6366, 6397, 6436, 6480, 6569, 6687, 6776, 6894, 6984, 7102, 7192, 7310, 7400, 7518, 7608, 7726, 7816,
  7934, 8024, 8142, 8230, 8348, 8438, 8556, 8644, 8762,8850,  8966,  9054, 9170, 9258, 9376, 9467, 9583, 9671, 9787, 9876
 
 La contrasena para la parte 1, 2 y 3 es: acelgas. Para la parte 4: elNANO33
@@ -6363,7 +6363,7 @@ void imprimirColumna(const char *energia, const char *energia1, const char *ener
     char linea[500];
     char *token, *token1, *token2, *token3, *prueba;
 
-    archivo = fopen("generacion_por_tecnologias_21_22_puntos_simplificado (2).txt", "r");
+    archivo = fopen("generacion.csv", "r");
     if (archivo == NULL)
     {
         printf("No se pudo abrir el archivo.\n");
