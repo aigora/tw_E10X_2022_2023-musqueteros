@@ -40,4 +40,4 @@ Hay 17 opciones con diferencias mínimas(cada uno tiene un variable 'k' distinta
 
 En lo referente a las funciones 'vector_coluna'  y  'dar_un_numero' son diferentes las cambiar_numero(del 1 al 17) son idénticas con la diferencia de cual es la energía que te permite cambiar los datos.
 
-Existen dos ficheros distintos (generacion.csv y generacion2.csv), son el mismo fichero, pero uno tiene una modificación para quitar las tildes y que pueda funcionar la funcion: datos_tabla
+Existen dos ficheros distintos (generacion.csv, generacion2.csv y generacion_por_tecnologias_21_22_puntos_simplificado.txt), son el mismo fichero, pero generacion2.csv tiene una modificación para quitar las tildes y que pueda funcionar la funcion: datos_tabla. generacion_por_tecnologias_21_22_puntos_simplificado.txt sirve para la funcion imprimirColumna
