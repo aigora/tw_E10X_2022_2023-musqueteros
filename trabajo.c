@@ -75,15 +75,15 @@ float valor;
 	int vueltaalmenu1;
 	int comprobacioncontrasena;
     	const char *contrasenadosejemploparaparte2 = "acelgas"; //para de momento nos vale
-	printf("(introduccion del trabajo, explicaciones y contraseñas)\n\n");
+	printf("Bienvenido a la base de datos de la genereación de energía a nivel nacional (2021-2022)\n\n");
 	do {//bucle para volver al menu principal
 	vueltaalmenu1=0;//en caso de volver necesitar volver al menu, se cambiara la variable por 1 y volvera al bucle
 	
 	
-	printf("si quiere pasar a Analisis detallado de 1 Energia(jaime), pulse 1\n");
-	printf("si quiere pasar a el ranquin mensual de la generación de los distintos tipos de energías (ainara), pulse 2\n");
-	printf("si quiere pasar a (parte de Diego), pulse 3\n");
-	printf("si quiere modificar los datos del fichero(eduardo), pulse 4\n");
+	printf("si quiere pasar a Analisis detallado de una energía, pulse 1\n");
+	printf("si quiere pasar a el ranquin por meses de la generación de los distintos tipos de energías, pulse 2\n");
+	printf("si quiere pasar a la comparación de distintas energías, pulse 3\n");
+	printf("si quiere modificar los datos del fichero, pulse 4\n");
 	printf("si quiere cerrar el programa, pulse 5\n");
 	
   char menu1;
