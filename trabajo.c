@@ -6044,7 +6044,7 @@ FILE *pfl;
 
 energia tipo[20];
 
-pfl=fopen("C:/Users/jaime/Downloads/generacionenergia.csv","r");
+pfl=fopen("generacion.csv","r");
 
 if (pfl == NULL)
  printf("error al abrir archivo");
@@ -6077,7 +6077,7 @@ while(fscanf(pfl,"%c",&letra)!= EOF)
 fclose(pfl);    
 
   
-pfl=fopen("C:/Users/jaime/Downloads/generacionenergia.csv","r");
+pfl=fopen("generacion.csv","r");
  
 while(i<5)
   {
@@ -6394,7 +6394,7 @@ int vector_columna(int k) {
 
   FILE *pf;
 
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -6433,7 +6433,7 @@ int dar_un_numero(int m, int k) {
   FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -6477,7 +6477,7 @@ void cambiar_numero_1 (float valor, int m) {
     FILE *ph;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  ph = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  ph = fopen("generacion.csv", "r");
 
   if (ph == NULL)
   {
@@ -6566,7 +6566,7 @@ void cambiar_numero_1 (float valor, int m) {
     int fclose (FILE *ph);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -6684,7 +6684,7 @@ void cambiar_numero_2 (float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -6773,7 +6773,7 @@ void cambiar_numero_2 (float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -6891,7 +6891,7 @@ void cambiar_numero_3 (float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -6981,7 +6981,7 @@ void cambiar_numero_3 (float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -7099,7 +7099,7 @@ void cambiar_numero_4 (float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -7189,7 +7189,7 @@ void cambiar_numero_4 (float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -7307,7 +7307,7 @@ void cambiar_numero_5 (float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -7397,7 +7397,7 @@ void cambiar_numero_5 (float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -7515,7 +7515,7 @@ void cambiar_numero_6 (float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -7605,7 +7605,7 @@ void cambiar_numero_6 (float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -7723,7 +7723,7 @@ void cambiar_numero_7 (float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -7813,7 +7813,7 @@ void cambiar_numero_7 (float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -7931,7 +7931,7 @@ void cambiar_numero_8 (float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -8021,7 +8021,7 @@ void cambiar_numero_8 (float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -8139,7 +8139,7 @@ void cambiar_numero_9 (float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -8227,7 +8227,7 @@ void cambiar_numero_9 (float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -8345,7 +8345,7 @@ void cambiar_numero_10(float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -8435,7 +8435,7 @@ void cambiar_numero_10(float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -8553,7 +8553,7 @@ void cambiar_numero_11(float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -8641,7 +8641,7 @@ void cambiar_numero_11(float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -8759,7 +8759,7 @@ void cambiar_numero_12(float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -8847,7 +8847,7 @@ void cambiar_numero_12(float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -8963,7 +8963,7 @@ void cambiar_numero_13(float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -9051,7 +9051,7 @@ void cambiar_numero_13(float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -9167,7 +9167,7 @@ void cambiar_numero_14(float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -9255,7 +9255,7 @@ void cambiar_numero_14(float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -9373,7 +9373,7 @@ void cambiar_numero_15(float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -9464,7 +9464,7 @@ void cambiar_numero_15(float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -9580,7 +9580,7 @@ void cambiar_numero_16(float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -9668,7 +9668,7 @@ void cambiar_numero_16(float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
@@ -9784,7 +9784,7 @@ void cambiar_numero_17(float valor, int m) {
     FILE *pf;
   // Atención a los separadores en la ruta del fichero, 
   //y a las comillas dobles
-  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "r");
+  pf = fopen("generacion.csv", "r");
 
   if (pf == NULL)
   {
@@ -9873,7 +9873,7 @@ void cambiar_numero_17(float valor, int m) {
     int fclose (FILE *pf);
     
     FILE *pg;
-    pg = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.csv", "w");
+    pg = fopen("generacion.csv", "w");
     
     if (pg == NULL)
   {
