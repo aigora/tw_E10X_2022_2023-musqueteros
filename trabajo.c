@@ -6394,7 +6394,7 @@ int vector_columna(int k) {
 
   FILE *pf;
 
-  pf = fopen("generacion.csv", "r");
+  pf = fopen("generacion_por_tecnologias_21_22_puntos_simplificado.txt", "r");
 
   if (pf == NULL)
   {
