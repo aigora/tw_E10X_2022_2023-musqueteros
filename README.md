@@ -39,3 +39,5 @@ En lo referente al código de la modificaciones de datos:
 Hay 17 opciones con diferencias mínimas(cada uno tiene un variable 'k' distinta para el funcionamiento de las funciones)  y una 18 para cerrar el programa. Dentro de cada opción se repite 24 veces la elección y el cambio de los datos(cada una con una variable 'm' distinta para elegir una fecha en las funciones).
 
 En lo referente a las funciones 'vector_coluna'  y  'dar_un_numero' son diferentes las cambiar_numero(del 1 al 17) son idénticas con la diferencia de cual es la energía que te permite cambiar los datos.
+
+Existen dos ficheros distintos (generacion.csv y generacion2.csv), son el mismo fichero, pero uno tiene una modificación para quitar las tildes y que pueda funcionar la funcion: datos_tabla
