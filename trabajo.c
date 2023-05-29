@@ -5905,7 +5905,7 @@ int verificarcontrasena(const char *contrasena) //funcion contraseña
 
 float datos_tabla(const char* filausuario, int numuero_columna) 
 {
-    FILE* archivo = fopen("generacion.csv", "r");
+    FILE* archivo = fopen("generacion2.csv", "r");
     if (archivo == NULL) {
         printf("\nError al abrir el archivo.\n");
         return 0.0f;
